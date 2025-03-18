@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sawari - Bike & Scooter Rentals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+         <img src="assest/logo.png" width="100">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+        <div class="flex flex-col md:flex-row p-6 bg-background rounded-lg shadow-lg">
+            <div class="md:w-1/2">
+              <h2 class="text-2xl font-bold mb-4">Vehicle Detail</h2>
+              <img src="assest/Xpulse.jpg" alt="Car" class="rounded-lg mb-4" />
+              <h3 class="text-lg font-semibold">Hero Xpulse 200 4v Specifications:</h3>
+              <ul class="list-disc pl-5 mb-4">
+                <li><strong>Engine Capacity:</strong> 200</li>
+                <li><strong>Mileage:</strong>45 kmpl</li>
+                <li><strong>Fuel Tank Capacity:</strong> 	13L</li>
+                <li><strong>Top Speed:</strong> 5 Speed</li>
+                <li><strong>Weight:</strong> 	158 kg</li>
+                <li><strong>Engine Start:</strong> 	Self / Kick</li>
+              </ul>
+            </div>
+
+            <div class="flex flex-col md:flex-row p-6 bg-background rounded-lg shadow-lg">
+              <div class="md:w-1/2">
+                <h2 class="text-2xl font-bold mb-4">Vehicle Detail</h2>
+                <img src="Xpulse.jpg" alt="Car" class="rounded-lg mb-4" />
+                <h3 class="text-lg font-semibold">Hero Xpulse 200 4v Specifications:</h3>
+                <ul class="list-disc pl-5 mb-4">
+                  <li><strong>Engine Capacity:</strong> 200</li>
+                  <li><strong>Mileage:</strong>45 kmpl</li>
+                  <li><strong>Fuel Tank Capacity:</strong> 	13L</li>
+                  <li><strong>Top Speed:</strong> 5 Speed</li>
+                  <li><strong>Weight:</strong> 	158 kg</li>
+                  <li><strong>Engine Start:</strong> 	Self / Kick</li>
+                </ul>
+              </div>
+
+
+              <div class="flex flex-col md:flex-row p-6 bg-background rounded-lg shadow-lg">
+                <div class="md:w-1/2">
+                  <h2 class="text-2xl font-bold mb-4">Vehicle Detail</h2>
+                  <img src="Xpulse.jpg" alt="Car" class="rounded-lg mb-4" />
+                  <h3 class="text-lg font-semibold">Hero Xpulse 200 4v Specifications:</h3>
+                  <ul class="list-disc pl-5 mb-4">
+                    <li><strong>Engine Capacity:</strong> 200</li>
+                    <li><strong>Mileage:</strong>45 kmpl</li>
+                    <li><strong>Fuel Tank Capacity:</strong> 	13L</li>
+                    <li><strong>Top Speed:</strong> 5 Speed</li>
+                    <li><strong>Weight:</strong> 	158 kg</li>
+                    <li><strong>Engine Start:</strong> 	Self / Kick</li>
+                  </ul>
+                </div>
+
+            </div>
+
+
+            <div class="md:w-1/2 md:ml-6">
+              <div class="bg-card p-4 rounded-lg shadow">
+                <h3 class="text-lg font-semibold mb-2">Estimated Amount</h3>
+                <p class="text-2xl font-bold">$ 32</p>
+                <p class="text-muted-foreground">inc vat $ 35</p>
+                <div class="flex items-center mt-4">
+                  <input type="checkbox" id="exclude-fee" class="mr-2" />
+                  <label for="exclude-fee" class="text-muted-foreground">excluding fuel $2</label>
+                </div>
+                <textarea placeholder="Please write any request." class="w-full mt-2 p-2 border border-border rounded-lg"></textarea>
+                <div class="flex justify-between mt-4">
+                  <button class="bg-primary text-primary-foreground p-2 rounded-lg">Book & Pay</button>
+                  <button class="bg-secondary text-secondary-foreground p-2 rounded-lg">Book Now</button>
+                </div>
+              </div>
+
+
+        
+        
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p><a href ="https://maps.app.goo.gl/1Gg4vBpxjwkJk8ym8"> Find us on Google Map </a></p>
+            <form action="submit_form.php" method="post" aria-label="Contact Form">
+                <input type="text" placeholder="Your Name" name="name" required aria-required="true" />
+                <input type="email" placeholder="Your Email" name="email" required aria-required="true" />
+                <textarea placeholder="Your Message" name="message" required aria-required="true"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> Australia</li>
+                <li><i class="fas fa-phone"></i> Phone: <a href="tel:+1234567890">+123 456 7890</a></li>
+                <li><i class="fas fa-envelope"></i> Email: <a href="mailto:info@sawari.com">info@sawari.com</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Sawari - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        window.onscroll = function() {
+          const header = document.getElementById("header");
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            header.classList.add("bg-white");
+          } else {
+            header.classList.remove("bg-white");
+          }
+        };
+      </script>
+      <style>
+        body {
+            background-color: var(--background);
+            color: var(--foreground);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+      </style>
+
+</body>
+</html>

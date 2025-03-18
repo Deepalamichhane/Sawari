@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawari - Special Offers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet"  href="https://cdn.jsdeliver.net/npm/remixicon@4.3.0/fonts/remixicon.css"/>
+    
+    
+  <style>
+        
+    .special-offers {
+        background-color: #f9f9f9;
+        padding: 40px 20px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+    }
+
+    .special-offers h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #3565b3;
+    }
+
+    .special-offers .offer-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .special-offers .offer-content p {
+        font-size: 1.2em;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .special-offers .offer-details p {
+        font-size: 1em;
+        color: #555;
+        margin: 10px 0;
+    }
+
+    .special-offers .offer-images {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+
+    .special-offers .offer-images img {
+        width: 45%;
+        border-radius: 8px;
+        transition: transform 0.3s;
+    }
+
+    .special-offers .offer-images img:hover {
+        transform: scale(1.05);
+    }
+
+    .special-offers .testimonials {
+        margin: 20px 0;
+        font-style: italic;
+        color: #666;
+    }
+
+    .special-offers .btn {
+        background-color: #3565b3;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .special-offers .btn:hover {
+        background-color: #2980b9;
+    }
+    
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="assest/logo.png" width="100"/>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+
+<div class="container mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-4">Select Vehicle</h2>
+  
+   
+      <div class="">
+        <img src="assest/honda.png" alt="" width="150" />
+        <h3 class="text-xl font-semibold mt-2">Honda Dio 110cc</h3>
+        <button class="bg-green-500 text-white p-2 rounded mt-2 w-full">Book Now</button>
+      </div>
+  
+      <div class="">
+        <img src="assest/royal.png" alt="" width="150" />
+        <h3 class="text-xl font-semibold mt-2">Royal Enfield himalayan 452cc</h3>
+        <button class="bg-green-500 text-white p-2 rounded mt-2 w-full">Book Now</button>
+      </div>
+  
+      <div class="">
+        <img src="assest/Xpulse.jpg" alt="" width="150" />
+        <h3 class="text-xl font-semibold mt-2">Hero Xpulse 200 4v</h3>
+        <button class="bg-green-500 text-white p-2 rounded mt-2 w-full">Book Now</button>
+      </div>
+
+      <div class="">
+        <img src="assest/bike.png" alt="" width="150"  />
+        <h3 class="text-xl font-semibold mt-2">Hero Xpulse</h3>
+        <button class="bg-green-500 text-white p-2 rounded mt-2 w-full">Book Now</button>
+      </div>
+
+
+      <div class="">
+        <img src="assest/scooter.png" alt="" width="150" />
+        <h3 class="text-xl font-semibold mt-2">scooter</h3>
+        <button class="bg-green-500 text-white p-2 rounded mt-2 w-full">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+    // JavaScript code to handle interactive elements
+    document.addEventListener('DOMContentLoaded', () => {
+        const questions = document.querySelectorAll('.faq-item .question');
+        
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    });
+</script>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Sawari - All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+</html>

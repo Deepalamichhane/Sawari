@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawari - Bike & Scooter Rentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assest/logo.png" width="100">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Explore Your City with Sawari</h2>
+            <p>Rent bikes and scooters with ease. Affordable, fast, and convenient. Discover your ride today!</p>
+            <a href="#quick-search" class="btn">Browse Rentals</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Bike Rentals</h3>
+                <img src="assest/bike.png" alt="Bike Rental" width="250">
+                <p>Rent bikes of various models for your city adventures. Comfortable and affordable options for everyone.</p>
+            </div>
+            <div class="card">
+                <h3>Scooter Rentals</h3>
+                <img src="assest/scooter.png" alt="Scooter Rental" width="250">
+                <p>Grab a scooter and explore the city at your own pace. Ideal for short-distance travel and sightseeing.</p>
+            </div>
+            <div class="card">
+                <h3>Special Offers</h3>
+                <img src="assest/offer.jpg" alt="Scooter Rental" width="250">
+                <p>Check out our seasonal offers for long-term rentals and group discounts. Ride more for less!<a href="special.html">  Click here </a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-us">
+        <h2>About Sawari</h2>
+        <p>At Sawari, we are committed to providing easy and accessible transportation solutions. Our fleet of bikes and scooters is available at various locations across the city, ensuring you can travel anytime, anywhere. We believe in sustainability, affordability, and convenience.</p>
+    </section>
+
+    <section class="quick-search" id="search">
+        <h2><strong>Quick Search</strong></h2>
+        <form aria-label="Quick Search Form">
+            <label for="location">Location</label>
+            <select id="location" name="location" required>
+                <option value="" disabled selected>Select your location</option>
+                <option value="city-center">City Center</option>
+                <option value="suburbs">Suburbs</option>
+                <option value="sydney">Sydney</option>
+                <option value="melbourne">Melbourne</option>
+                <option value="brisbane">Brisbane</option>
+                <option value="perth">Perth</option>
+                <option value="adelaide">Adelaide</option>
+            </select>
+            <label for="start-date">Pick-Up Date</label>
+            <input type="date" id="start-date" name="start-date" required>
+            <label for="end-date">Return Date</label>
+            <input type="date" id="end-date" name="end-date" required>
+            <button type="submit" class="btn">Search</button>
+        </form>
+    </section>
+
+    <section class="features" id="features">
+        <h1><strong>Choose Sawari</strong> </h1>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Choose Your Ride</h3>
+                <p>Wide variety of bikes and scooters.</p>
+            </div>
+            <div class="card">
+                <h3>Flexible Rentals</h3>
+                <p>Rent hourly, daily, or weekly.</p>
+            </div>
+            <div class="card">
+                <h3>Ride with Confidence</h3>
+                <p>Insurance and roadside assistance included.</p>
+            </div>
+        </div>
+    </section>
+
+    <section><h4 style="font-size:xx-large;"> Adapt to Your Lifestyle, Choice is Your</h4></section> 
+
+    <section class="banner__container">
+        <div class="banner__wrapper">
+            <img src="assest/1.png" alt="banner" />
+            <img src="assest/2.png" alt="banner" />
+            <img src="assest/3.png" alt="banner" />
+            <img src="assest/4.png" alt="banner" />
+            <img src="assest/5.png" alt="banner" />
+            <img src="assest/6.png" alt="banner" />
+            <img src="assest/7.png" alt="banner" />
+            <img src="assest/8.png" alt="banner" />
+            <img src="assest/9.png" alt="banner" />
+            <img src="assest/10.png" alt="banner" />
+            <img src="assest/11.png" alt="banner" />
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul class="faq-list">
+            <li class="faq-item">
+                <span class="question">What documents do I need to rent a bike or scooter?</span>
+                <span class="answer">You will need a valid driver's license and a government-issued ID.</span>
+            </li>
+            <li class="faq-item">
+                <span class="question">How do I book a rental?</span>
+                <span class="answer">You can book a rental online through our website or our mobile app.</span>
+            </li>
+            <li class="faq-item">
+                <span class="question">What are your rental rates?</span>
+                <span class="answer">Our rates vary depending on the vehicle type and rental duration. Please visit our pricing page for details.</span>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <form action="submit_form.php" method="post">
+            <input type="text" placeholder="Your Name" name="name" required>
+            <input type="email" placeholder="Your Email" name="email" required>
+            <textarea placeholder="Your Message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Sawari - All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
